@@ -1,0 +1,860 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*header nav*/
+
+body {
+    background-image: url(../imagenes/portadas/toneles2.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar-brand img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.bg-brown {
+    background-color: rgb(179, 92, 92);
+}
+
+
+
+.portada {
+    margin-top: 100px;
+    height: 200px;
+    background-color: rgba(204, 169, 160, 0.514);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+
+.portada div {
+    text-align: center;
+    width: 80%;
+    gap: 20px;
+}
+
+.portada h1{
+    padding: 20px;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.portada p{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: oblique;
+}
+
+@media (max-width: 840px) {
+    .portada h1 {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 670px) {
+    .portada h1{
+        font-size: 30px
+    }
+
+    .portada p{
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+
+/*Vinos destacados*/
+
+.titulo {
+    
+    border: 2px solid rgb(167, 104, 104);
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: brown;
+    color: antiquewhite;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+
+
+.vinos-destacados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 16px;
+    justify-content: space-between;
+
+}
+
+.producto {
+    min-width: 250px;
+    max-width: 100%;
+    min-height: 300px;
+    max-height: 100%;
+    background-color: rgba(253, 251, 251, 0.452);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: auto;
+    box-shadow: 5px 5px 5px brown;
+}
+
+.producto:hover {
+    background-color: rgb(88, 42, 42);
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+
+
+.producto img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.producto img:hover{
+    height: 500px;
+
+}
+
+.descripcion {
+    padding: 10px;
+    display: flex;
+   flex-direction: column;
+}
+
+.descripcion h3{
+    font-size: 20px;
+    
+}
+
+.descripcion a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: antiquewhite;
+    background-color: rgb(236, 105, 105);
+}
+
+.descripcion p{
+    font-size: 18px;
+}
+
+
+@media (max-width: 660px){
+
+    .vinos-destacados {
+        grid-template-columns: repeat(2, 1fr)    }
+
+}
+
+
+@media (max-width: 560px) {
+
+    .vinos-destacados{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        align-self: center;
+    }
+
+    .producto img{
+        width: 100%;
+        justify-content: center;
+    }
+
+
+}
+
+/*imagenes de carrousel*/
+
+.carousel-inner {
+    padding: 20px;
+}
+
+.carousel-item img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*seccion box de regalos*/
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.box-contenido{
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: antiquewhite;
+
+}
+
+@media (max-width: 900px) {
+    .box-contenido{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box-items {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+.box-contenido img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+
+
+}
+
+.box-items {
+    padding: 20px;
+    text-align: center;
+     
+}
+
+ .box-items h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    font-size: 35px;
+    color: brown;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 40px;
+} 
+
+.box-items p{
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+
+.box-items a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: brown;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.box-contenido:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+/*Media Queries*/
+
+@media (max-width: 900px) {
+    .box-contenido {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media (max-width: 585px) {
+    .portada h1 {
+        font-size: 25px;
+    }
+
+    
+    .box-contenido img {
+        width: 330px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 15px
+    }
+
+    .box-contenido h3{
+        font-size: 30px;
+    }
+
+    .box-items p{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .box-items a{
+        font-size: 16px;
+    
+}
+    .box-contenido {
+        min-width: 350px;
+        max-width: 100%;
+    }
+}
+
+
+
+@media (max-width: 400px){
+    .box-contenido{
+        min-width: 300px;
+        max-width: 100%;
+        
+    }
+
+    .box-contenido img{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .box-items {
+        padding: 5px;
+    }
+
+
+    .portada h1{
+        font-size: 20px;
+    }
+}
+
+
+
+/*Nuestros vinos*/
+
+.nuestros-vinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 16px;
+    justify-content: space-between;
+    
+}
+
+/*Combos en Promo por 3 botellas*/
+
+.combosx3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    padding: 1rem;
+    gap: 10px;
+    
+}
+
+.promo10off{
+    min-width: 250px;
+    max-width: 100%;
+    min-height: 300px;
+    max-height: 100%;
+    background-color: rgba(253, 251, 251, 0.452);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: auto;
+    box-shadow: 5px 5px 5px brown;
+    position: relative;
+    
+}
+    
+.poromo10off img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.info-promo1{
+    padding: 10px;
+}
+
+.info-promo1 h3{
+    font-size: 25px;
+    font-weight: 800;
+
+}
+
+.info-promo1 p{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: oblique;
+
+}
+
+.info-promo1 a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: antiquewhite;
+    background-color: rgb(236, 105, 105);
+    
+    
+}
+.promo10off span {
+    padding: 10px;
+    font-weight: 700;
+    background-color: brown;
+    color: antiquewhite;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    
+
+}
+
+
+/*Combos en Promo por 4 botellas*/
+
+.combosx4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.promo15off {
+    display: flex;  
+    width: 400px;
+    margin: 16px;
+    background-color: rgba(253, 251, 251, 0.452);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: auto;
+    box-shadow: 5px 5px 5px brown;
+    position: relative;
+}
+
+.poromo15off img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.info-promo2{
+    padding: 10px;
+}
+
+.info-promo2 h3{
+    font-size: 25px;
+    font-weight: 800;
+
+}
+
+.info-promo2 p{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: oblique;
+
+}
+
+.info-promo2 a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: antiquewhite;
+    background-color: rgb(236, 105, 105);
+    
+}
+
+.promo15off span {
+    padding: 10px;
+    font-weight: 700;
+    background-color: brown;
+    color: antiquewhite;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    
+
+}
+
+
+/*Combos en Promo por 6 botellas*/
+
+.combosx6 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 10px;
+    
+}
+
+
+.promo20off {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+    background-color: rgba(253, 251, 251, 0.452);
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: auto;
+    box-shadow: 5px 5px 5px brown;
+    position: relative;
+
+}
+
+.promo20off img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+      
+}
+
+.info-promo3{
+    padding: 10px;
+}
+
+.info-promo3 h3{
+    font-size: 25px;
+    font-weight: 800;
+
+}
+
+.info-promo3 p{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: oblique;
+
+}
+
+.info-promo3 a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: antiquewhite;
+    background-color: rgb(236, 105, 105);
+}
+
+.promo20off span {
+    padding: 10px;
+    font-weight: 700;
+    background-color: brown;
+    color: antiquewhite;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    
+
+}
+
+@media (max-width: 1070px){
+    .combosx6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .info-promo2{
+        min-width: 350px;
+        max-width: 100%;
+        min-height: 300px;
+        max-height: 100%
+    
+    }
+    
+}
+
+@media (max-width: 550px){
+    .promo20off {
+        min-width: 300px;
+        max-width: 100%;
+    }
+
+    .combosx3 {
+        gap: 20px;
+    }
+}
+
+/*Seccion Contactanos*/
+
+.contactos {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   grid-template-rows: auto;
+   padding: 1rem;
+    background-color:rgba(3, 3, 3, 0.226);
+    gap: 20px;
+    margin-top: 20px;
+    
+}
+
+
+
+.info-contacto iframe {
+    
+    width: 400px;
+    height: 300px;
+    margin-top: 50px;
+     
+}
+
+
+.info-contacto h2{
+    font-size: 30px;
+    color: rgb(233, 216, 216);
+    font-weight: bold;
+    
+}
+
+.formulario h2{
+    font-size: 30px;
+    color: rgb(233, 216, 216);
+    font-weight: bold;
+    
+}
+
+
+
+.info-contacto p {
+    font-size: 25px;
+    color: beige;
+}
+
+.info-formulario input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid brown;
+    border-radius: 15px;
+
+}
+
+.info-formulario{
+    color: white;
+    font-size: 16px;
+    gap: 20px;
+}
+
+.info-formulario label{
+    padding: 5px;
+}
+
+.info-formulario input:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.info-formulario textarea:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.botones .bot1{
+    margin: 5px;
+    width: 150px;
+    border-radius: 10px;
+    border: 1px solid brown;
+    padding: 10PX;
+}
+
+.botones .bot1:hover {
+    background-color: rgb(179, 92, 92);
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+@media (max-width: 450px){
+    .info-contacto iframe{
+        min-width: 300px;
+        max-width: 100%;
+        
+        margin-top: 10px;
+    }
+
+    .formulario{
+        margin-top: 10px;
+    }
+    .info-formulario input, textarea{
+        min-width: 300px;
+        max-width: 100%;
+        padding: 10px;
+
+}
+    .info-contacto{
+        place-content: center;
+    }
+
+
+    .info-contacto h2{
+        font-size: 20px;
+        display: block
+}
+
+    .info-contacto p {
+        font-size: 16px;
+        display: block;
+}
+    .contactos{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        max-width: 100%;
+    }
+
+    .botones .bot1{
+        padding: 5px;
+    }
+
+}
+
+.promo10off:hover {
+    background-color: rgb(88, 42, 42);
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+.promo15off:hover {
+    background-color: rgb(88, 42, 42);
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+.promo20off:hover {
+    background-color: rgb(88, 42, 42);
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+
+
+/*seccion pagos y envios*/
+
+.pagosyenvios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+    background-color:rgba(3, 3, 3, 0.226);
+}
+
+.logistica{
+    text-align: center;
+    width: 70%;
+}
+
+.logistica h2 {
+    font-size: 35px;
+    color: antiquewhite;
+    font-weight: 900;
+    font-style: oblique;
+
+}
+
+.logistica p{
+    font-size: 25px;
+    font-weight: 400;
+    color: antiquewhite;
+}
+
+
+@media (max-width: 720px){
+    .logistica h2{
+        font-size: 30px;
+        
+    }
+
+    .logistica p{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 530px){
+
+    .pagosyenvios{
+        align-items: start;
+    }
+
+    .logistica{
+        text-align: start;
+        padding: 10px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 450px){
+    .logistica h2{
+        font-size: 25px
+    }
+
+    .logistica p{
+        font-size: 18px;
+    }
+
+    .portada .f1{
+        display: none;
+    }
+
+    .portada .f2{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+}
