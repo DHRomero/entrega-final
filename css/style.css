@@ -21,10 +21,47 @@ body {
     border-radius: 100%;
 }
 
+.navbar-nav a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+
 .bg-brown {
     background-color: rgb(179, 92, 92);
 }
 
+.dropdown-menu li{
+    background-color:  rgb(179, 92, 92);
+    
+}
+
+.dropdown-menu a{
+    color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-style: oblique;
+    padding: 5px;
+}
+
+.dropdown-menu a:hover{
+    color:  rgb(179, 92, 92);;
+}
+
+
+.dropdown-menu{
+    height: 100%;
+}
+
+
+.offcanvas-header span{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: antiquewhite;
+}
 
 
 .portada {
@@ -181,13 +218,17 @@ body {
 }
 
 
-@media (max-width: 560px) {
+@media (max-width: 570px) {
 
     .vinos-destacados{
-        display: flex;
-        flex-direction: column;
-        width: 350px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-rows: auto;
         align-self: center;
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+        gap: 5px;
+        
     }
 
     .producto img{
@@ -195,8 +236,31 @@ body {
         justify-content: center;
     }
 
+    .producto {
+        min-width: 220px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 475px) {
+    .vinos-destacados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    .producto{
+        min-width: 250px;
+        max-width: 400px;
+        
+        
+    }
 
 }
+
+
 
 /*imagenes de carrousel*/
 
@@ -622,6 +686,7 @@ body {
 }
 
 @media (max-width: 550px){
+
     .promo20off {
         min-width: 300px;
         max-width: 100%;
