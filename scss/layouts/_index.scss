@@ -1,0 +1,224 @@
+
+.portada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    height: 200px;
+    background-color: $transparent;
+    padding: 10px;
+   
+    
+    
+    h1{
+        color: $dark;
+        padding: 20px;
+        font-size: 45px;
+        font-style: oblique;
+        font-weight: 700;
+        text-align: center;
+        filter: drop-shadow(8px 8px 5px rgb(107, 101, 101));
+    }
+    
+    p{
+        font-size: 25px;
+        font-weight: 500;
+        font-style: oblique;
+        text-align: center;
+        color: $dark;
+    }
+
+
+}
+
+
+
+
+
+/*Vinos destacados*/
+
+.titulo {
+    
+    border: 2px solid rgb(167, 104, 104);
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: $primary-color;
+    color: antiquewhite;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+
+    h2{
+        @include flex (flex, center, center, 10px);
+        padding: 5px;
+        color: $light;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+}
+
+
+
+
+.vinos-destacados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 16px;
+    justify-content: space-between;
+
+
+    .producto {
+        min-width: 250px;
+        max-width: 100%;
+        min-height: 300px;
+        max-height: 100%;
+        background-color: $transparent;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 15px;
+        overflow: auto;
+        box-shadow: 5px 5px 5px brown;
+        transition: 0.5s;
+
+       
+        img {
+            @include img(100%, 400px, cover);
+        }
+
+        &:hover {
+            background-color: $tercitary-color;
+            color: $light;
+            transition: 0.5s;
+            }
+        
+        .descripcion {
+           display: flex;
+           flex-direction: column;
+           padding: 5px;
+           color: $dark;
+            
+       
+           &:hover{
+            color: $light;
+        }
+
+           h3{
+            font-size: 20px;
+            }
+        
+            a{
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 5px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 15px;
+            color: $light;
+            background-color: $secondary-color;
+
+            &:hover {
+                background-color: $primary-color;
+            }
+            }
+        
+            p{
+            font-size: 18px;
+           
+            }
+
+
+        }
+    }
+}
+
+/*imagenes de carrousel*/
+
+.carousel-inner {
+    padding: 20px;
+}
+
+.carousel-item img{
+    @include img(80%, 100%, cover);
+}
+
+/*seccion box de regalos*/
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    .box-contenido{
+        @include flex (flex, center, center,10px);
+        padding: 16px;
+        margin: 20px;
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: $light;
+       
+        
+        img {
+          @include img (500px, 500px, cover);
+          border-radius: 15px;
+        }
+        &:hover {
+            background-color: $tercitary-color;
+            color: $light;
+            transition: 0.5s;
+        }
+
+        .box-items {
+            padding: 20px;
+            text-align: center;
+
+          
+
+              
+             
+            h3 {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    font-size: 35px;
+                color: $secondary-color;
+                font-weight: bold;
+                margin-bottom: 10px;
+                font-size: 40px;
+            } 
+            
+            p{
+                color: $dark;
+                font-size: 25px;
+                font-weight: 500; 
+              
+            }
+    
+            a{
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 5px;
+                text-align: center;
+                border: 2px solid black;
+                border-radius: 15px;
+                color: $light;
+                background-color: $secondary-color;
+    
+                &:hover {
+                    background-color: $primary-color;
+                }
+            
+            }  
+            
+            
+        }
+
+    }
+
+}
+
+
+

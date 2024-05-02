@@ -1,0 +1,235 @@
+.combosx3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-rows: auto;
+    padding: 1rem;
+    gap: 10px;
+  
+    
+    .promo10off{
+        min-width: 250px;
+        max-width: 100%;
+        min-height: 300px;
+        max-height: 100%;
+        background-color: $transparent;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 15px;
+        overflow: auto;
+        box-shadow: 5px 5px 5px brown;
+        position: relative;
+
+        &:hover {
+            background-color: $tercitary-color;
+            color: $light;
+            transition: 0.5s;
+        }
+        
+        
+
+        img{
+            @include img(100%, 400px, cover);
+        }
+
+        .info-promo1{
+            padding: 10px;
+    
+    
+            h3{
+                font-size: 25px;
+                font-weight: 800;
+            }
+            
+            p{
+                font-size: 20px;
+                font-weight: 500;
+                font-style: oblique;
+            }
+            
+            a{
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 5px;
+                text-align: center;
+                border: 2px solid black;
+                border-radius: 15px;
+                color: $light;
+                background-color: $secondary-color;
+
+                &:hover {
+                    background-color: $primary-color;
+                }
+            }
+    
+            span {
+                padding: 10px;
+                font-weight: 700;
+                background-color: $primary-color;
+                color: $light;
+                position: absolute;
+                top: 5px;
+                right: 0;
+            }
+    
+        }
+    }
+           
+}
+
+
+/*Combos en Promo por 4 botellas*/
+
+.combosx4 {
+    @include flex (row, center, center, 10px);
+    flex-wrap: wrap;
+    
+    .promo15off {
+        display: flex;  
+        flex-direction: column;
+        min-width: 250px;
+        max-width: 400px;
+        margin: 16px;
+        background-color: $transparent;
+        gap: 5px;
+        border: 2px solid black;
+        border-radius: 15px;
+        overflow: auto;
+        box-shadow: 5px 5px 5px brown;
+        position: relative;
+
+        &:hover {
+            background-color: $tercitary-color;
+            color: $light;
+            transition: 0.5s;
+        }
+
+        .img{
+           @include img(100%, 400px, cover);
+        }
+        
+        .info-promo2{
+            padding: 10px;
+
+            h3{
+                font-size: 25px;
+                font-weight: 800;       
+            }
+            
+            p{
+                font-size: 20px;
+                font-weight: 500;
+                font-style: oblique;          
+            }
+            
+            a{
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 5px;
+                text-align: center;
+                border: 2px solid black;
+                border-radius: 15px;
+                color: $light;
+                background-color: $secondary-color;  
+                
+                &:hover {
+                    background-color: $primary-color;
+                }
+            }
+            
+            span {
+                padding: 10px;
+                font-weight: 700;
+                background-color: $primary-color;
+                color: $light;
+                position: absolute;
+                top: 5px;
+                right: 0;   
+               
+            }
+        }
+
+    }
+}
+
+/*Combos en Promo por 6 botellas*/
+
+.combosx6 {
+    @include flex(row, space-between, center, 10px);
+    padding: 16px;
+    
+    
+        .promo20off {
+            display: flex;
+            flex-direction: column;
+            min-width: 300px;
+            max-width: 450px;
+            background-color: $transparent;
+            gap: 5px;
+            border: 2px solid black;
+            border-radius: 15px;
+            overflow: auto;
+            box-shadow: 5px 5px 5px brown;
+            position: relative;
+            
+                img {
+                @include img(100%, 400px, cover);
+                object-position: center;    
+                }
+
+
+                &:hover {
+                    background-color: $tercitary-color;
+                    color: $light;
+                    transition: 0.5s;
+        }
+
+                .info-promo3{
+                    padding: 10px;
+
+                    h3{
+                        font-size: 25px;
+                        font-weight: 800;
+                    }
+                    
+                    p{
+                        font-size: 20px;
+                        font-weight: 500;
+                        font-style: oblique;
+                    }
+                    
+                    a{
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: 500;
+                        padding: 5px;
+                        text-align: center;
+                        border: 2px solid black;
+                        border-radius: 15px;
+                        color: $light;
+                        background-color: $secondary-color;
+                        &:hover {
+                            background-color: $primary-color;
+                        }
+                    }
+                    
+                    span {
+                        padding: 10px;
+                        font-weight: 700;
+                        background-color: $primary-color;
+                        color: $light;
+                        position: absolute;
+                        top: 5px;
+                        right: 0;
+                    }
+                }
+            
+         }   
+}
+
+
+
+

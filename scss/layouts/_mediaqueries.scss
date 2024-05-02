@@ -1,0 +1,315 @@
+
+//index
+
+@media (max-width: 840px) {
+    .portada h1 {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 670px) {
+    .portada h1{
+        font-size: 30px
+    }
+
+    .portada p{
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+
+//vinos destacados
+
+@media (max-width: 992px){
+
+    .vinos-destacados {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        grid-template-rows: auto;  }
+
+}
+
+@media (max-width: 670px){
+
+    .vinos-destacados {
+        grid-template-columns: repeat(2, 1fr)    }
+
+}
+
+
+@media (max-width: 570px) {
+
+    .vinos-destacados{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-rows: auto;
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+        gap: 5px;
+
+        .producto {
+            min-width: 220px;
+            max-width: 100%;
+
+            img{
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        
+    }
+
+}
+
+@media (max-width: 480px) {
+    .vinos-destacados{
+        @include flex (column, center, center,20px);
+
+
+        .producto{
+            min-width: 250px;
+            max-width: 400px;
+        }
+
+    }
+
+}
+
+
+
+//contenido box regalos
+
+
+@media (max-width: 900px) {
+    .box-contenido{
+        display: flex;
+        flex-direction: row;
+
+        
+    .box-items {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    }
+
+}
+
+@media (max-width: 900px) {
+    .box-contenido {
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+}
+
+@media (max-width: 585px) {
+    .box-contenido {
+        min-width: 350px;
+        max-width: 100%;
+
+        img{
+            min-width: 300px;
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px
+        }
+       
+        .box-items {
+            padding: 10px;
+            }
+
+        .box-items h3{
+            font-size: 30px;
+        }
+
+        .box-items p{
+            font-size: 16px;
+        }
+
+        
+
+    }    
+}
+
+
+
+@media (max-width: 400px){
+
+    .box{
+        .box-contenido{
+            min-width: 290px;
+            max-width: 100%;
+            margin: 5px;
+            padding: 5px;
+    
+            img{
+                min-width: 290px;
+                max-width: 100%;
+                object-fit: cover;
+                padding: 10px;
+            }
+        
+        }
+    }
+    
+
+    .portada h1{
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+//combos en promo
+
+
+@media (max-width: 900px){
+    .combosx6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .info-promo2{
+        min-width: 300px;
+        max-width: 100%;
+        min-height: 300px;
+        max-height: 100%;
+    
+    }
+    
+}
+
+
+@media (max-width: 550px){
+
+    .promo20off {
+        min-width: 300px;
+        max-width: 100%;
+    }
+
+    .combosx3 {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 425px){
+
+    .combosx6{
+        padding: 5px;
+
+        .promo20off{
+            min-width: 250px;
+            max-width: 100%;
+
+            .info-promo3 {
+                padding: 10px;
+                h3{
+                    font-size: 25px; }
+    
+                .info.promo p{
+                    font-size: 16px;
+                }
+            }         
+        }        
+    }    
+}
+
+//contactanos
+
+@media (max-width: 450px){
+    .contactos{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        max-width: 100%;
+
+        .info-contacto{
+            place-content: center;
+    
+            iframe{
+                min-width: 250px;
+                max-width: 100%;
+                margin-top: 10px;
+                }
+            h2{
+                font-size: 25px;
+                display: block
+                }
+        
+            p {
+                font-size: 18px;
+                display: block;
+                 }
+        }
+    
+        .formulario{
+        margin-top: 10px;
+
+        .info-formulario input, textarea{
+            min-width: 250px;
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        
+        .botones .bot1{
+        padding: 5px;
+        }
+        }
+    
+    }
+    
+
+
+}
+
+//pagos y envios
+
+
+@media (max-width: 530px){
+
+    .pagosyenvios{
+        align-items: start;
+
+        .logistica{
+            text-align: start;
+            padding: 16px;
+        
+            h2{
+                font-size: 20px;
+                text-align: start;
+            }
+            p{
+                font-size: 16px;
+                text-align: start;
+            }
+        
+        }
+
+    }
+
+}
+
+@media (max-width: 450px){
+
+    .portada .f1{
+        display: none;
+    }
+
+    .portada .f2{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+}
+
+
+

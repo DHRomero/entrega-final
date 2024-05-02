@@ -1,0 +1,33 @@
+.pagosyenvios {
+    @include flex(column, center, center, 20px);
+    margin-top: 25px;
+    background-color:rgba(3, 3, 3, 0.603);
+    
+
+    .logistica{
+        text-align: center;
+        width: 100%;
+        
+
+        h2 {
+            font-size: 35px;
+            color: antiquewhite;
+            font-weight: 900;
+            font-style: oblique;
+        
+        }
+        
+        p{
+            font-size: 25px;
+            font-weight: 400;
+            color: $light;
+        }
+    
+
+    }
+    
+    
+}
+
+
+

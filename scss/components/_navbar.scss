@@ -1,0 +1,48 @@
+.navbar-brand img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.navbar-nav a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+
+.bg-brown {
+    background-color: rgb(87, 19, 19);
+}
+
+.dropdown-menu li{
+    background-color:  rgb(87, 19, 19);
+    
+}
+
+.dropdown-menu a{
+    color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-style: oblique;
+    
+}
+
+.dropdown-menu a:hover{
+    color:  rgb(179, 92, 92);
+}
+
+
+.dropdown-menu{
+    height: 100%;
+}
+
+
+.offcanvas-header span{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: antiquewhite;
+}

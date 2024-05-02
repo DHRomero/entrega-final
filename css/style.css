@@ -1,925 +1,804 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-
-/*header nav*/
 
 body {
-    background-image: url(../imagenes/portadas/toneles2.jpg);
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
+  background-image: url(../imagenes/portadas/toneles2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.navbar-brand img{
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 100%;
+.navbar-brand img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 100%;
 }
 
-.navbar-nav a{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
-    font-style: oblique;
-    font-size: 20px;
+.navbar-nav a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+  font-style: oblique;
+  font-size: 20px;
 }
-
 
 .bg-brown {
-    background-color: rgb(179, 92, 92);
+  background-color: rgb(87, 19, 19);
 }
 
-.dropdown-menu li{
-    background-color:  rgb(179, 92, 92);
-    
+.dropdown-menu li {
+  background-color: rgb(87, 19, 19);
 }
 
-.dropdown-menu a{
-    color: whitesmoke;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
-    font-style: oblique;
-    padding: 5px;
+.dropdown-menu a {
+  color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+  font-style: oblique;
 }
 
-.dropdown-menu a:hover{
-    color:  rgb(179, 92, 92);;
+.dropdown-menu a:hover {
+  color: rgb(179, 92, 92);
 }
 
-
-.dropdown-menu{
-    height: 100%;
+.dropdown-menu {
+  height: 100%;
 }
 
-
-.offcanvas-header span{
-    font-size: 30px;
-    font-weight: 400;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: antiquewhite;
+.offcanvas-header span {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: antiquewhite;
 }
 
+.combosx3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-rows: auto;
+  padding: 1rem;
+  gap: 10px;
+}
+.combosx3 .promo10off {
+  min-width: 250px;
+  max-width: 100%;
+  min-height: 300px;
+  max-height: 100%;
+  background-color: rgba(253, 251, 251, 0.315);
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: auto;
+  box-shadow: 5px 5px 5px brown;
+  position: relative;
+}
+.combosx3 .promo10off:hover {
+  background-color: rgb(119, 48, 48);
+  color: rgb(216, 191, 191);
+  transition: 0.5s;
+}
+.combosx3 .promo10off img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.combosx3 .promo10off .info-promo1 {
+  padding: 10px;
+}
+.combosx3 .promo10off .info-promo1 h3 {
+  font-size: 25px;
+  font-weight: 800;
+}
+.combosx3 .promo10off .info-promo1 p {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: oblique;
+}
+.combosx3 .promo10off .info-promo1 a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  color: rgb(216, 191, 191);
+  background-color: rgb(122, 77, 77);
+}
+.combosx3 .promo10off .info-promo1 a:hover {
+  background-color: rgb(87, 19, 19);
+}
+.combosx3 .promo10off .info-promo1 span {
+  padding: 10px;
+  font-weight: 700;
+  background-color: rgb(87, 19, 19);
+  color: rgb(216, 191, 191);
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+/*Combos en Promo por 4 botellas*/
+.combosx4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.combosx4 .promo15off {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 400px;
+  margin: 16px;
+  background-color: rgba(253, 251, 251, 0.315);
+  gap: 5px;
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: auto;
+  box-shadow: 5px 5px 5px brown;
+  position: relative;
+}
+.combosx4 .promo15off:hover {
+  background-color: rgb(119, 48, 48);
+  color: rgb(216, 191, 191);
+  transition: 0.5s;
+}
+.combosx4 .promo15off .img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.combosx4 .promo15off .info-promo2 {
+  padding: 10px;
+}
+.combosx4 .promo15off .info-promo2 h3 {
+  font-size: 25px;
+  font-weight: 800;
+}
+.combosx4 .promo15off .info-promo2 p {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: oblique;
+}
+.combosx4 .promo15off .info-promo2 a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  color: rgb(216, 191, 191);
+  background-color: rgb(122, 77, 77);
+}
+.combosx4 .promo15off .info-promo2 a:hover {
+  background-color: rgb(87, 19, 19);
+}
+.combosx4 .promo15off .info-promo2 span {
+  padding: 10px;
+  font-weight: 700;
+  background-color: rgb(87, 19, 19);
+  color: rgb(216, 191, 191);
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+/*Combos en Promo por 6 botellas*/
+.combosx6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+}
+.combosx6 .promo20off {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 450px;
+  background-color: rgba(253, 251, 251, 0.315);
+  gap: 5px;
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: auto;
+  box-shadow: 5px 5px 5px brown;
+  position: relative;
+}
+.combosx6 .promo20off img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+.combosx6 .promo20off:hover {
+  background-color: rgb(119, 48, 48);
+  color: rgb(216, 191, 191);
+  transition: 0.5s;
+}
+.combosx6 .promo20off .info-promo3 {
+  padding: 10px;
+}
+.combosx6 .promo20off .info-promo3 h3 {
+  font-size: 25px;
+  font-weight: 800;
+}
+.combosx6 .promo20off .info-promo3 p {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: oblique;
+}
+.combosx6 .promo20off .info-promo3 a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  color: rgb(216, 191, 191);
+  background-color: rgb(122, 77, 77);
+}
+.combosx6 .promo20off .info-promo3 a:hover {
+  background-color: rgb(87, 19, 19);
+}
+.combosx6 .promo20off .info-promo3 span {
+  padding: 10px;
+  font-weight: 700;
+  background-color: rgb(87, 19, 19);
+  color: rgb(216, 191, 191);
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.contactos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: auto;
+  padding: 1rem;
+  background-color: rgba(253, 251, 251, 0.315);
+  gap: 20px;
+  margin-top: 20px;
+}
+.contactos .info-contacto iframe {
+  width: 400px;
+  height: 300px;
+  margin-top: 50px;
+}
+.contactos .info-contacto h2 {
+  font-size: 30px;
+  color: rgb(87, 19, 19);
+  font-weight: bold;
+}
+.contactos .info-contacto p {
+  font-size: 25px;
+  color: rgb(15, 14, 14);
+}
+.contactos .formulario h2 {
+  font-size: 30px;
+  color: rgb(87, 19, 19);
+  font-weight: bold;
+}
+.contactos .info-formulario {
+  color: rgb(15, 14, 14);
+  font-size: 16px;
+  gap: 20px;
+}
+.contactos .info-formulario input, .contactos .info-formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid brown;
+  border-radius: 15px;
+}
+.contactos .info-formulario input:hover, .contactos .info-formulario textarea:hover {
+  background-color: rgb(15, 14, 14);
+  color: rgb(216, 191, 191);
+}
+.contactos .info-formulario label {
+  padding: 5px;
+}
+.contactos .info-formulario .botones .bot1 {
+  margin: 5px;
+  width: 150px;
+  border-radius: 10px;
+  border: 1px solid brown;
+  padding: 5PX;
+}
+.contactos .info-formulario .botones .bot1:hover {
+  background-color: rgb(87, 19, 19);
+  color: rgb(216, 191, 191);
+  border: 1px solid whitesmoke;
+}
 
 .portada {
-    margin-top: 100px;
-    height: 200px;
-    background-color: rgba(204, 169, 160, 0.514);
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  height: 200px;
+  background-color: rgba(253, 251, 251, 0.315);
+  padding: 10px;
 }
-
-.portada div {
-    text-align: center;
-    width: 80%;
-    gap: 20px;
+.portada h1 {
+  color: rgb(15, 14, 14);
+  padding: 20px;
+  font-size: 45px;
+  font-style: oblique;
+  font-weight: 700;
+  text-align: center;
+  filter: drop-shadow(8px 8px 5px rgb(107, 101, 101));
 }
-
-.portada h1{
-    padding: 20px;
-    font-size: 45px;
-    font-weight: 900;
+.portada p {
+  font-size: 25px;
+  font-weight: 500;
+  font-style: oblique;
+  text-align: center;
+  color: rgb(15, 14, 14);
 }
-
-.portada p{
-    font-size: 20px;
-    font-weight: 500;
-    font-style: oblique;
-}
-
-@media (max-width: 840px) {
-    .portada h1 {
-        font-size: 35px;
-    }
-
-}
-
-@media (max-width: 670px) {
-    .portada h1{
-        font-size: 30px
-    }
-
-    .portada p{
-        font-size: 16px;
-        font-weight: 700;
-    }
-}
-
 
 /*Vinos destacados*/
-
 .titulo {
-    
-    border: 2px solid rgb(167, 104, 104);
-    border-radius: 15px;
-    width: 100%;
-    text-align: center;
-    background-color: brown;
-    color: antiquewhite;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  border: 2px solid rgb(167, 104, 104);
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(87, 19, 19);
+  color: antiquewhite;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-.titulo h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    
+.titulo h2 {
+  display: flex;
+  flex-direction: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  color: rgb(216, 191, 191);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-
 
 .vinos-destacados {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: auto;
-    gap: 20px;
-    padding: 16px;
-    justify-content: space-between;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 16px;
+  justify-content: space-between;
 }
-
-.producto {
-    min-width: 250px;
-    max-width: 100%;
-    min-height: 300px;
-    max-height: 100%;
-    background-color: rgba(253, 251, 251, 0.452);
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    border-radius: 15px;
-    overflow: auto;
-    box-shadow: 5px 5px 5px brown;
+.vinos-destacados .producto {
+  min-width: 250px;
+  max-width: 100%;
+  min-height: 300px;
+  max-height: 100%;
+  background-color: rgba(253, 251, 251, 0.315);
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: auto;
+  box-shadow: 5px 5px 5px brown;
+  transition: 0.5s;
 }
-
-.producto:hover {
-    background-color: rgb(88, 42, 42);
-    color: whitesmoke;
-    transition: 0.5s;
+.vinos-destacados .producto img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
-
-
-
-.producto img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+.vinos-destacados .producto:hover {
+  background-color: rgb(119, 48, 48);
+  color: rgb(216, 191, 191);
+  transition: 0.5s;
 }
-
-.producto img:hover{
-    height: 500px;
-
+.vinos-destacados .producto .descripcion {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  color: rgb(15, 14, 14);
 }
-
-.descripcion {
-    padding: 10px;
-    display: flex;
-   flex-direction: column;
+.vinos-destacados .producto .descripcion:hover {
+  color: rgb(216, 191, 191);
 }
-
-.descripcion h3{
-    font-size: 20px;
-    
+.vinos-destacados .producto .descripcion h3 {
+  font-size: 20px;
 }
-
-.descripcion a{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 5px;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 15px;
-    color: antiquewhite;
-    background-color: rgb(236, 105, 105);
+.vinos-destacados .producto .descripcion a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  color: rgb(216, 191, 191);
+  background-color: rgb(122, 77, 77);
 }
-
-.descripcion p{
-    font-size: 18px;
+.vinos-destacados .producto .descripcion a:hover {
+  background-color: rgb(87, 19, 19);
 }
-
-
-@media (max-width: 660px){
-
-    .vinos-destacados {
-        grid-template-columns: repeat(2, 1fr)    }
-
+.vinos-destacados .producto .descripcion p {
+  font-size: 18px;
 }
-
-
-@media (max-width: 570px) {
-
-    .vinos-destacados{
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        grid-template-rows: auto;
-        align-self: center;
-        justify-content: center;
-        width: 100%;
-        padding: 10px;
-        gap: 5px;
-        
-    }
-
-    .producto img{
-        width: 100%;
-        justify-content: center;
-    }
-
-    .producto {
-        min-width: 220px;
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 475px) {
-    .vinos-destacados{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-
-    .producto{
-        min-width: 250px;
-        max-width: 400px;
-        
-        
-    }
-
-}
-
-
 
 /*imagenes de carrousel*/
-
 .carousel-inner {
-    padding: 20px;
+  padding: 20px;
 }
 
-.carousel-item img{
-    width: 80%;
-    height: 100%;
-    object-fit: cover;
+.carousel-item img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*seccion box de regalos*/
-
 .box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.box .box-contenido {
+  display: flex;
+  flex-direction: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: rgb(216, 191, 191);
+}
+.box .box-contenido img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.box .box-contenido:hover {
+  background-color: rgb(119, 48, 48);
+  color: rgb(216, 191, 191);
+  transition: 0.5s;
+}
+.box .box-contenido .box-items {
+  padding: 20px;
+  text-align: center;
+}
+.box .box-contenido .box-items h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 35px;
+  color: rgb(122, 77, 77);
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.box .box-contenido .box-items p {
+  color: rgb(15, 14, 14);
+  font-size: 25px;
+  font-weight: 500;
+}
+.box .box-contenido .box-items a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  color: rgb(216, 191, 191);
+  background-color: rgb(122, 77, 77);
+}
+.box .box-contenido .box-items a:hover {
+  background-color: rgb(87, 19, 19);
+}
+
+@media (max-width: 840px) {
+  .portada h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 670px) {
+  .portada h1 {
+    font-size: 30px;
+  }
+  .portada p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 992px) {
+  .vinos-destacados {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-rows: auto;
+  }
+}
+@media (max-width: 670px) {
+  .vinos-destacados {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 570px) {
+  .vinos-destacados {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-rows: auto;
+    align-self: center;
+    justify-content: center;
     width: 100%;
+    padding: 10px;
+    gap: 5px;
+  }
+  .vinos-destacados .producto {
+    min-width: 220px;
+    max-width: 100%;
+  }
+  .vinos-destacados .producto img {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .vinos-destacados {
     display: flex;
     flex-direction: column;
-    
-   
-}
-
-.box-contenido{
-    padding: 16px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    border: 1px solid black;
-    border-radius: 15px;
-    background-color: antiquewhite;
-
+    gap: 20px;
+  }
+  .vinos-destacados .producto {
+    min-width: 250px;
+    max-width: 400px;
+  }
 }
-
 @media (max-width: 900px) {
-    .box-contenido{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .box-items {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
+  .box-contenido {
+    display: flex;
+    flex-direction: row;
+  }
+  .box-contenido .box-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
-
-
-
-.box-contenido img {
-    width: 500px;
-    height: 500px;
+@media (max-width: 900px) {
+  .box-contenido {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 585px) {
+  .box-contenido {
+    min-width: 350px;
+    max-width: 100%;
+  }
+  .box-contenido img {
+    min-width: 300px;
+    max-width: 100%;
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
-
-
-}
-
-.box-items {
-    padding: 20px;
-    text-align: center;
-     
-}
-
- .box-items h3 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    font-size: 35px;
-    color: brown;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 40px;
-} 
-
-.box-items p{
-    font-size: 25px;
-    font-weight: 500;
-    
-}
-
-.box-items a{
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    color: antiquewhite;
-    border: 1px solid black;
-    border-radius: 15px;
-    background-color: brown;
+  }
+  .box-contenido .box-items {
     padding: 10px;
-    text-align: center;
+  }
+  .box-contenido .box-items h3 {
+    font-size: 30px;
+  }
+  .box-contenido .box-items p {
+    font-size: 16px;
+  }
 }
-
-
-.box-contenido:hover {
-    background-color: black;
-    color: antiquewhite;
+@media (max-width: 400px) {
+  .box .box-contenido {
+    min-width: 290px;
+    max-width: 100%;
+    margin: 5px;
+    padding: 5px;
+  }
+  .box .box-contenido img {
+    min-width: 290px;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 10px;
+  }
+  .portada h1 {
+    font-size: 25px;
+  }
 }
-
-/*Media Queries*/
-
 @media (max-width: 900px) {
-    .box-contenido {
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-}
-
-@media (max-width: 585px) {
-    .portada h1 {
-        font-size: 25px;
-    }
-
-    
-    .box-contenido img {
-        width: 330px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 15px
-    }
-
-    .box-contenido h3{
-        font-size: 30px;
-    }
-
-    .box-items p{
-        font-size: 16px;
-        text-align: left;
-    }
-
-    .box-items a{
-        font-size: 16px;
-    
-}
-    .box-contenido {
-        min-width: 350px;
-        max-width: 100%;
-    }
-}
-
-
-
-@media (max-width: 400px){
-    .box-contenido{
-        min-width: 300px;
-        max-width: 100%;
-        
-    }
-
-    .box-contenido img{
-        width: 100%;
-        padding: 10px;
-    }
-
-    .box-items {
-        padding: 5px;
-    }
-
-
-    .portada h1{
-        font-size: 20px;
-    }
-}
-
-
-
-/*Nuestros vinos*/
-
-.nuestros-vinos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: auto;
+  .combosx6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
-    padding: 16px;
-    justify-content: space-between;
-    
-}
-
-/*Combos en Promo por 3 botellas*/
-
-.combosx3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: auto;
-    padding: 1rem;
-    gap: 10px;
-    
-}
-
-.promo10off{
-    min-width: 250px;
+  }
+  .info-promo2 {
+    min-width: 300px;
     max-width: 100%;
     min-height: 300px;
     max-height: 100%;
-    background-color: rgba(253, 251, 251, 0.452);
+  }
+}
+@media (max-width: 550px) {
+  .promo20off {
+    min-width: 300px;
+    max-width: 100%;
+  }
+  .combosx3 {
     gap: 20px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    border-radius: 15px;
-    overflow: auto;
-    box-shadow: 5px 5px 5px brown;
-    position: relative;
-    
+  }
 }
-    
-.poromo10off img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
-
-.info-promo1{
-    padding: 10px;
-}
-
-.info-promo1 h3{
-    font-size: 25px;
-    font-weight: 800;
-
-}
-
-.info-promo1 p{
-    font-size: 20px;
-    font-weight: 500;
-    font-style: oblique;
-
-}
-
-.info-promo1 a{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
+@media (max-width: 425px) {
+  .combosx6 {
     padding: 5px;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 15px;
-    color: antiquewhite;
-    background-color: rgb(236, 105, 105);
-    
-    
-}
-.promo10off span {
+  }
+  .combosx6 .promo20off {
+    min-width: 250px;
+    max-width: 100%;
+  }
+  .combosx6 .promo20off .info-promo3 {
     padding: 10px;
-    font-weight: 700;
-    background-color: brown;
-    color: antiquewhite;
-    position: absolute;
-    top: 5px;
-    right: 0;
-    
-
-}
-
-
-/*Combos en Promo por 4 botellas*/
-
-.combosx4 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.promo15off {
-    display: flex;  
-    width: 400px;
-    margin: 16px;
-    background-color: rgba(253, 251, 251, 0.452);
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    border-radius: 15px;
-    overflow: auto;
-    box-shadow: 5px 5px 5px brown;
-    position: relative;
-}
-
-.poromo15off img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
-
-
-.info-promo2{
-    padding: 10px;
-}
-
-.info-promo2 h3{
+  }
+  .combosx6 .promo20off .info-promo3 h3 {
     font-size: 25px;
-    font-weight: 800;
-
-}
-
-.info-promo2 p{
-    font-size: 20px;
-    font-weight: 500;
-    font-style: oblique;
-
-}
-
-.info-promo2 a{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 5px;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 15px;
-    color: antiquewhite;
-    background-color: rgb(236, 105, 105);
-    
-}
-
-.promo15off span {
-    padding: 10px;
-    font-weight: 700;
-    background-color: brown;
-    color: antiquewhite;
-    position: absolute;
-    top: 5px;
-    right: 0;
-    
-
-}
-
-
-/*Combos en Promo por 6 botellas*/
-
-.combosx6 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
-    gap: 10px;
-    
-}
-
-
-.promo20off {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 500px;
-    background-color: rgba(253, 251, 251, 0.452);
-    gap: 20px;
-    border: 2px solid black;
-    border-radius: 15px;
-    overflow: auto;
-    box-shadow: 5px 5px 5px brown;
-    position: relative;
-
-}
-
-.promo20off img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
-      
-}
-
-.info-promo3{
-    padding: 10px;
-}
-
-.info-promo3 h3{
-    font-size: 25px;
-    font-weight: 800;
-
-}
-
-.info-promo3 p{
-    font-size: 20px;
-    font-weight: 500;
-    font-style: oblique;
-
-}
-
-.info-promo3 a{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 5px;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 15px;
-    color: antiquewhite;
-    background-color: rgb(236, 105, 105);
-}
-
-.promo20off span {
-    padding: 10px;
-    font-weight: 700;
-    background-color: brown;
-    color: antiquewhite;
-    position: absolute;
-    top: 5px;
-    right: 0;
-    
-
-}
-
-@media (max-width: 1070px){
-    .combosx6 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    .info-promo2{
-        min-width: 350px;
-        max-width: 100%;
-        min-height: 300px;
-        max-height: 100%
-    
-    }
-    
-}
-
-@media (max-width: 550px){
-
-    .promo20off {
-        min-width: 300px;
-        max-width: 100%;
-    }
-
-    .combosx3 {
-        gap: 20px;
-    }
-}
-
-/*Seccion Contactanos*/
-
-.contactos {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-   grid-template-rows: auto;
-   padding: 1rem;
-    background-color:rgba(3, 3, 3, 0.226);
-    gap: 20px;
-    margin-top: 20px;
-    
-}
-
-
-
-.info-contacto iframe {
-    
-    width: 400px;
-    height: 300px;
-    margin-top: 50px;
-     
-}
-
-
-.info-contacto h2{
-    font-size: 30px;
-    color: rgb(233, 216, 216);
-    font-weight: bold;
-    
-}
-
-.formulario h2{
-    font-size: 30px;
-    color: rgb(233, 216, 216);
-    font-weight: bold;
-    
-}
-
-
-
-.info-contacto p {
-    font-size: 25px;
-    color: beige;
-}
-
-.info-formulario input, textarea{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid brown;
-    border-radius: 15px;
-
-}
-
-.info-formulario{
-    color: white;
+  }
+  .combosx6 .promo20off .info-promo3 .info.promo p {
     font-size: 16px;
-    gap: 20px;
+  }
 }
-
-.info-formulario label{
+@media (max-width: 450px) {
+  .contactos {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 100%;
+  }
+  .contactos .info-contacto {
+    place-content: center;
+  }
+  .contactos .info-contacto iframe {
+    min-width: 250px;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  .contactos .info-contacto h2 {
+    font-size: 25px;
+    display: block;
+  }
+  .contactos .info-contacto p {
+    font-size: 18px;
+    display: block;
+  }
+  .contactos .formulario {
+    margin-top: 10px;
+  }
+  .contactos .formulario .info-formulario input, .contactos .formulario textarea {
+    min-width: 250px;
+    max-width: 100%;
+    padding: 10px;
+  }
+  .contactos .formulario .botones .bot1 {
     padding: 5px;
+  }
 }
-
-.info-formulario input:hover {
-    background-color: black;
-    color: antiquewhite;
+@media (max-width: 530px) {
+  .pagosyenvios {
+    align-items: start;
+  }
+  .pagosyenvios .logistica {
+    text-align: start;
+    padding: 16px;
+  }
+  .pagosyenvios .logistica h2 {
+    font-size: 20px;
+    text-align: start;
+  }
+  .pagosyenvios .logistica p {
+    font-size: 16px;
+    text-align: start;
+  }
 }
-
-.info-formulario textarea:hover {
-    background-color: black;
-    color: antiquewhite;
+@media (max-width: 450px) {
+  .portada .f1 {
+    display: none;
+  }
+  .portada .f2 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
 }
-
-.botones .bot1{
-    margin: 5px;
-    width: 150px;
-    border-radius: 10px;
-    border: 1px solid brown;
-    padding: 10PX;
+.nuestros-vinos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 16px;
+  justify-content: space-between;
 }
-
-.botones .bot1:hover {
-    background-color: rgb(179, 92, 92);
-    color: whitesmoke;
-    border: 1px solid whitesmoke;
+.nuestros-vinos .producto {
+  min-width: 250px;
+  max-width: 100%;
+  min-height: 300px;
+  max-height: 100%;
+  background-color: rgba(253, 251, 251, 0.452);
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: auto;
+  box-shadow: 5px 5px 5px brown;
 }
-
-@media (max-width: 450px){
-    .info-contacto iframe{
-        min-width: 300px;
-        max-width: 100%;
-        
-        margin-top: 10px;
-    }
-
-    .formulario{
-        margin-top: 10px;
-    }
-    .info-formulario input, textarea{
-        min-width: 300px;
-        max-width: 100%;
-        padding: 10px;
-
+.nuestros-vinos .producto:hover {
+  background-color: rgb(88, 42, 42);
+  color: whitesmoke;
+  transition: 0.5s;
 }
-    .info-contacto{
-        place-content: center;
-    }
-
-
-    .info-contacto h2{
-        font-size: 20px;
-        display: block
+.nuestros-vinos .producto img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
-
-    .info-contacto p {
-        font-size: 16px;
-        display: block;
+.nuestros-vinos .producto img:hover {
+  height: 500px;
 }
-    .contactos{
-        display: flex;
-        flex-direction: column;
-        min-width: 300px;
-        max-width: 100%;
-    }
-
-    .botones .bot1{
-        padding: 5px;
-    }
-
+.nuestros-vinos .producto .descripcion {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
-
-.promo10off:hover {
-    background-color: rgb(88, 42, 42);
-    color: whitesmoke;
-    transition: 0.5s;
+.nuestros-vinos .producto .descripcion h3 {
+  font-size: 20px;
 }
-
-.promo15off:hover {
-    background-color: rgb(88, 42, 42);
-    color: whitesmoke;
-    transition: 0.5s;
+.nuestros-vinos .producto .descripcion a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  color: antiquewhite;
+  background-color: rgb(236, 105, 105);
 }
-
-.promo20off:hover {
-    background-color: rgb(88, 42, 42);
-    color: whitesmoke;
-    transition: 0.5s;
+.nuestros-vinos .producto .descripcion p {
+  font-size: 18px;
 }
-
-
-
-/*seccion pagos y envios*/
 
 .pagosyenvios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    margin-top: 25px;
-    background-color:rgba(3, 3, 3, 0.226);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+  background-color: rgba(3, 3, 3, 0.603);
+}
+.pagosyenvios .logistica {
+  text-align: center;
+  width: 100%;
+}
+.pagosyenvios .logistica h2 {
+  font-size: 35px;
+  color: antiquewhite;
+  font-weight: 900;
+  font-style: oblique;
+}
+.pagosyenvios .logistica p {
+  font-size: 25px;
+  font-weight: 400;
+  color: rgb(216, 191, 191);
 }
 
-.logistica{
-    text-align: center;
-    width: 70%;
-}
-
-.logistica h2 {
-    font-size: 35px;
-    color: antiquewhite;
-    font-weight: 900;
-    font-style: oblique;
-
-}
-
-.logistica p{
-    font-size: 25px;
-    font-weight: 400;
-    color: antiquewhite;
-}
-
-
-@media (max-width: 720px){
-    .logistica h2{
-        font-size: 30px;
-        
-    }
-
-    .logistica p{
-        font-size: 20px;
-    }
-
-}
-
-@media (max-width: 530px){
-
-    .pagosyenvios{
-        align-items: start;
-    }
-
-    .logistica{
-        text-align: start;
-        padding: 10px;
-        width: 100%;
-    }
-
-}
-
-@media (max-width: 450px){
-    .logistica h2{
-        font-size: 25px
-    }
-
-    .logistica p{
-        font-size: 18px;
-    }
-
-    .portada .f1{
-        display: none;
-    }
-
-    .portada .f2{
-        font-size: 18px;
-        margin-top: 15px;
-    }
-}
+/*# sourceMappingURL=style.css.map */
