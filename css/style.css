@@ -563,17 +563,6 @@ body {
 @media (max-width: 900px) {
   .box-contenido {
     display: flex;
-    flex-direction: row;
-  }
-  .box-contenido .box-items {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 900px) {
-  .box-contenido {
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -593,10 +582,7 @@ body {
     padding: 10px;
   }
   .box-contenido .box-items h3 {
-    font-size: 30px;
-  }
-  .box-contenido .box-items p {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media (max-width: 400px) {
