@@ -1,17 +1,17 @@
 .pagosyenvios {
-    @include flex(column, center, center, 20px);
-    margin-top: 25px;
-    background-color:rgba(3, 3, 3, 0.603);
+    @include flex(column, center, start, 20px);
+    padding: 1rem;
     
 
     .logistica{
         text-align: center;
         width: 100%;
+        background-color: rgba(0, 0, 0, 0.555);
         
 
         h2 {
             font-size: 35px;
-            color: antiquewhite;
+            color: $light;
             font-weight: 900;
             font-style: oblique;
         
